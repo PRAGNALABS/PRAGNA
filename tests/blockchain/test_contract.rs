@@ -91,6 +91,10 @@ PUMPFUN_PROGRAM_ID=<your_pumpfun_program_id>
         recent_blockhash,
     );
 import Database from 'better-sqlite3';
+data: vec![],
+            owner: solana_sdk::system_program::id(),
+
+    )}
 
 export const db = new Database('orbcon.db');
 db.exec(`
